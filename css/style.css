@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+/* Baner */
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('./../image/baner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ponovljene slike */
+.repeat-image, .repeat-image2, .repeat-image3, .repeat-image4, .repeat-image5 {
+    width: 100%;
+    height: 30px;
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.repeat-image-footer {
+    width: 100%;
+    height: 200px;
+    background-image: url('./../image/7.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* Navigacija */
+.main-menu {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 4px solid #466F75;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(70, 111, 117, 0.5);
+    border:  #466F75; /* Neobičan okvir */
+    z-index: 1000;
+}
+
+.main-menu a {
+    color: #466F75;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.main-menu a:hover {
+    color: white;
+    background-color: #466F75;
+    border-radius: 10px;
+    padding: 12px 18px;
+}
+
+
+/* Glavni sadržaj */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.left-aside, .right-aside {
+    width: 25%;
+    max-width: 300px;
+}
+
+.left-aside img, .right-aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(70, 111, 117, 0.1);
+    border-radius: 8px;
+    color: #466F75;
+}
+
+footer {
+    background-color: #466F75;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+.repeat-image,
+.repeat-image2,
+.repeat-image3,
+.repeat-image4,
+.repeat-image5 {
+    width: 100%;
+    height: 30px; /* Visina linije */
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin-bottom: -5px; /* Smanjuje razmak između slika */
+}
+
+/* Pojedinačne slike */
+.repeat-image {
+    background-image: url('./../image/6.jpg');
+}
+.repeat-image2 {
+    background-image: url('./../image/5.jpg');
+}
+.repeat-image3 {
+    background-image: url('./../image/4.jpg');
+}
+.repeat-image4 {
+    background-image: url('./../image/10.jpg');
+}
+.repeat-image5 {
+    background-image: url('./../image/11.jpg');
+}
+
+
+/* Sekcija sa uslugama */
+.services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service {
+    width: 28%;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.service img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.service ul {
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Galerija */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery_item {
+    width: calc(33.33% - 15px);
+    max-width: 250px;
+}
+
+.gallery_item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 5px solid #466F75;
+    border-radius: 10px;
+}
+
+.gallery_item img:hover {
+    transform: scale(1.1);
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-image {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Stil za dugmiće prev/next u modalu */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* RESPONSIVE PRILAGODBE */
+
+/* Tableti i manji ekrani */
+@media (max-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 18px; /* Smanjen font za h2 da se ne preklapa */
+    }
+
+    .content {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .gallery_item img {
+        height: 120px;
+    }
+
+    .service {
+        width: 40%;
+        font-size: 12px;
+    }
+
+    .service img {
+        width: 60px;
+        height: 60px;
+    }
+    
+
+    .repeat-image-footer {
+        height: 100px;
+    }
+}
+
+/* Telefoni */
+@media (max-width: 480px) {
+    .main-menu a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 16px; /* Još manje za telefone */
+    }
+
+    .content {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .services {
+        gap: 5px;
+    }
+
+    .service {
+        width: 48%;
+        font-size: 10px;
+    }
+
+    .service img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .service ul {
+        font-size: 9px;
+    }
+
+    .gallery_item img {
+        height: 80px;
+    }
+
+    .repeat-image-footer {
+        height: 80px;
+    }
+}

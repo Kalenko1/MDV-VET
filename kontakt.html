@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+     
+        .container1 {
+            display: flex;
+            gap: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #466F75(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .section {
+            flex: 1;
+            color: #466F75;
+            font-size: large;
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #466F75;
+        }
+        .icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #466F75;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .icons i {
+            font-size: 30px;
+        }
+        iframe {
+            width: 50%;
+            height: 100px;
+            border: none;
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <div class="banner"></div>
+    </header>
+
+    <!-- Slika ispod banera koja se ponavlja -->
+    <div class="repeat-image4"></div>
+
+    <!-- Navigacija -->
+    <nav class="main-menu">
+        <a href="index.html">Početna</a>
+        <a href="usluge.html">Naše Usluge</a>
+        <a href="nasTim.html">Naš tim</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="container1">
+        <!-- Sekcija 1: Ikonice za kontakt -->
+        <div class="section">
+            <h3>Kontakt</h3>
+            <div class="icons">
+                <a href="tel:+381601234567"><i class="fas fa-phone"></i> Telefon</a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+        </div>
+        
+        <!-- Sekcija 2: Radno vreme -->
+        <div class="section">
+            <h3>Radno Vreme</h3>
+            <p>Ponedeljak - Petak: 09:00 - 18:00</p>
+            <p>Subota: 10:00 - 14:00</p>
+            <p>Nedelja: Zatvoreno</p>
+        </div>
+        
+        <!-- Sekcija 3: Mapa -->
+        <div class="section">
+            <h3>Lokacija</h3>
+            <iframe src="https://maps.google.com/maps?q=Beograd&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="repeat-image-footer"></div>
+
+    </footer>
+
+</body>
+</html>
