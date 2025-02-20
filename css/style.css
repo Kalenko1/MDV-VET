@@ -339,14 +339,113 @@ footer a {
         height: 80px;
     }
 }
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .contact-form {
-      width: 100%;
-      padding: 10px;
+    .banner {
+        height: 200px;
     }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      font-size: 16px;
+    
+    h2 {
+        font-size: 18px;
     }
-  }
+    
+    .content {
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .gallery_item img {
+        height: 120px;
+    }
+    
+    .service {
+        width: 40%;
+        font-size: 12px;
+    }
+    
+    .service img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .repeat-image-footer {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust navigation for smaller screens */
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .main-menu a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    .content {
+        width: 95%;
+        font-size: 12px;
+    }
+    
+    .services {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .service {
+        width: 80%;
+        font-size: 10px;
+    }
+    
+    .service img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .gallery_item img {
+        height: 90px;
+    }
+    
+    .repeat-image-footer {
+        height: 80px;
+    }
+    
+    /* Contact page adjustments */
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-map {
+        width: 100% !important;
+        height: 300px !important;
+        margin: 10px 0;
+    }
+    
+    .container1 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .section {
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+}
