@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Početna Stranica</title>
+    <title>Početna Stranica - MDV Vet Veterinarska Ambulanta</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Početna stranica MDV Vet veterinarske ambulante. Stručni veterinarski tim sa bogatim iskustvom u hirurgiji, internim bolestima i bolestima glodara.">
+    <meta name="keywords" content="veterinarska ambulanta, veterinar, hirurgija, interna medicina, Beograd, specijalista veterinarske medicine, veterinarski tim, glodari">
+    <meta name="author" content="MDV Vet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -28,50 +34,43 @@
     <!-- Glavni sadržaj sa dva asida -->
     <div class="container">
         <aside class="left-aside">
-            <img src="./image/first2.jpg" alt="Leva slika">
+            <img src="./image/first2.jpg" alt="Leva slika" loading="lazy">
         </aside>
 
         <main>
             <div class="gallery">
-                <div class="gallery_item"><img src="./gallery/galerija1.jpg" alt="Slika 1"></div> 
-                <div class="gallery_item"><img src="./gallery/galerija2.jpeg" alt="Slika 2"></div> 
-                <div class="gallery_item"><img src="./gallery/galerija3.jpg" alt="Slika 3"></div> 
-                <div class="gallery_item"><img src="gallery/galerija4.jpg" alt="Slika 4"></div> 
-                <div class="gallery_item"><img src="gallery/galerija5.jpeg" alt="Slika 5"></div> 
-                <div class="gallery_item"><img src="gallery/galerija6.webp" alt="Slika 6"></div> 
-                <div class="gallery_item"><img src="./gallery/galerija7.png" alt="Slika 7"></div> 
-                <div class="gallery_item"><img src="./gallery/galerija8.jpeg" alt="Slika 8"></div> 
-                <div class="gallery_item"><img src="./gallery/galerija9.webp" alt="Slika 9"></div> 
-                <div class="gallery_item"><img src="gallery/galerija10.jpeg" alt="Slika 10"></div> 
-                
-    
-                
-    
-                
+                <div class="gallery_item"><img src="./gallery/galerija1.jpg" alt="Slika 1" loading="lazy"></div> 
+                <div class="gallery_item"><img src="./gallery/galerija2.jpg" alt="Slika 2" loading="lazy"></div> 
+                <div class="gallery_item"><img src="./gallery/galerija3.jpg" alt="Slika 3" loading="lazy"></div> 
+                <div class="gallery_item"><img src="gallery/galerija4.jpg" alt="Slika 4" loading="lazy"></div> 
+                <div class="gallery_item"><img src="gallery/galerija5.jpg" alt="Slika 5" loading="lazy"></div> 
+                <div class="gallery_item"><img src="gallery/galerija6.jpg" alt="Slika 6" loading="lazy"></div> 
+                <div class="gallery_item"><img src="./gallery/galerija7.jpg" alt="Slika 7" loading="lazy"></div> 
+                <div class="gallery_item"><img src="./gallery/galerija8.jpg" alt="Slika 8" loading="lazy"></div> 
                 
             </div>
         </main>
+
+        <!-- Modal za pregled slika -->
         <div class="modal hidden">
             <span class="close">&times;</span>
-            <img class="modal-image" src="" alt="Prikaz slike">
+            <img class="modal-image" src="" alt="Prikaz slike" />
             <button class="prev">❮</button>
             <button class="next">❯</button>
         </div>
-    
+
         <script src="./script.js"></script>
 
         <aside class="right-aside">
-            <img src="./image/first.jpg" alt="Desna slika">
+            <img src="./image/first.jpg" alt="Desna slika" loading="lazy">
         </aside>
     </div>
 
     <footer>
-        <a href="" target="_blank">
+        <a href="https://www.instagram.com/mdv_vet_batajnica/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
+        <a href="tel:+38166200048" title="Pozovite nas"><i class="fas fa-phone"></i> </a>
     </footer>
 
 </body>
