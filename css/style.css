@@ -12,14 +12,22 @@ body {
 
 /* Baner */
 .banner {
-    width: 100%;
-    height: 40vh; /* Prilagođava se ekranu */
-    min-height: 200px; /* Da ne bude premali na mobilnim */
-    max-height: 400px; /* Da ne bude preveliki na velikim ekranima */
-    background-image: url('../image/front.jpg');
-    background-position: center;
+    width: 100%;                  /* širi banner */
+    height: 40vh;                /* viši banner */
+    min-height: 300px;           /* da ne bude premali */
+    max-height: 500px;           /* ograničenje za velike ekrane */
+
+    margin: 0 auto;              /* horizontalno centriranje */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../image/front.svg');
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;   /* cela slika, bez sečenja */
+
+    filter: contrast(110%) brightness(105%);
 }
 .container1 {
     display: flex;
