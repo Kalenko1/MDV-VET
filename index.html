@@ -20,20 +20,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
             padding: 12px 16px;
             font-size: 1.3em;
             font-weight: bold;
             text-align: center;
             position: relative;
             z-index: 10;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     
         .sapice {
             display: inline-block;
             animation: bounce 1.2s infinite ease-in-out alternate, pulse 2s infinite ease-in-out;
             font-size: 1.4rem;
+            flex-shrink: 0;
         }
     
         @keyframes bounce {
@@ -48,17 +50,15 @@
     
         @media (max-width: 500px) {
             .dezurni-vet {
-                font-size: 1.05rem;
-                padding: 10px;
-                gap: 6px;
+                font-size: 1rem;
+                padding: 10px 8px;
             }
     
             .sapice {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
-    </style>
-    
+    </style>    
 </head>
 <body>
 
