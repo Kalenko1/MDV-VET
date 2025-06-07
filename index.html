@@ -12,10 +12,62 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .dezurni-vet {
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            white-space: nowrap;
+            text-align: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+    
+        .koscica {
+            display: inline-block;
+            animation: bounce 1.2s infinite ease-in-out alternate, pulse 2s infinite ease-in-out;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+    
+        @keyframes bounce {
+            0%   { transform: translateY(0); }
+            100% { transform: translateY(-8px); }
+        }
+    
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50%      { transform: scale(1.2); }
+        }
+    
+        @media (max-width: 500px) {
+            .dezurni-vet {
+                font-size: 1rem;
+                gap: 8px;
+                padding: 10px;
+            }
+    
+            .koscica {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    
+
 </head>
 <body>
 
     <header>
+        <div class="dezurni-vet">
+            <span class="koscica">🦴</span> Dežurni veterinar 24H: 066 2000 48 <span class="koscica">🦴</span>
+        </div>
         <div class="banner"></div>
     </header>
 
@@ -50,14 +102,13 @@
                 <h2>Radno vreme</h2>
                 <div class="vreme-box">
                     <p><i class="fa-regular fa-clock"></i> <strong>Ponedeljak - Petak: 09:00 - 19:00</strong></p>
-                    <p class="kucne-posete">🏠 <strong>Kućne posete: 13:00 - 16:00</strong></p>
+                    <p class="kucne-posete">🏠 <strong>Kućne posete</strong></p>
                     <p><i class="fa-regular fa-calendar-check"></i> <strong>Subota: 10:00 - 13:00</strong></p>
                     <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Nedelja: Zakazane i hitne intervencije</strong></p>
-                
                 </div>
 
                 <p class="kontakt">
-                    <a href="tel:+381638153524" class="ikonica"> Dežurni broj:
+                    <a href="tel:+381638153524" class="ikonica"> Dežurni telefon : 
                         <i class="fa-solid fa-phone"></i> 066 2000 48
                     </a>
                 </p>
@@ -74,7 +125,6 @@
             <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="tel:+38166200048" title="Pozovite nas"><i class="fas fa-phone"></i></a>
-       
     </footer>
 
 </body>
